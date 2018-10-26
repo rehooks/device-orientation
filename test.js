@@ -9,14 +9,14 @@ function render(val) {
 }
 
 test(t => {
-  function Component() {
-    let value = useDeviceOrientation();
-    return h('div', { value });
-  }
+	function Component() {
+		let value = useDeviceOrientation();
+		return h('div', { value });
+	}
 
-  let input = render(h(Component));
+	let input = render(h(Component));
 
-  t.deepEqual(input.toJSON().props.value, {
+	t.deepEqual(input.toJSON().props.value, {
 		absolute: false,
 		alpha: null,
 		beta: null,
