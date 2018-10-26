@@ -19,14 +19,14 @@ yarn add @rehooks/device-orientation
 import useDeviceOrientation from '@rehooks/device-orientation';
 
 function MyComponent() {
-	let value = useDeviceOrientation();
-	return (
-		<div>
-			<p>Absolute: {value.absolute}</p>
-			<p>Alpha: {value.alpha}</p>
-			<p>Beta: {value.beta}</p>
-			<p>Gamma: {value.gamma}</p>
-		</div>
-	);
+  let value = useDeviceOrientation();
+  return (
+    <div>
+      <p>Absolute: {value.absolute}</p>
+      <p>Alpha: {value.alpha}</p>
+      <p>Beta: {value.beta}</p>
+      <p>Gamma: {value.gamma}</p>
+    </div>
+  );
 }
 ```
